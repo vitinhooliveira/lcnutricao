@@ -1,0 +1,25 @@
+{
+  "name": "lcnutricao",
+  "version": "1.0.0",
+  "description": "lcnutricao",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitinhooliveira/lcnutricao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitinhooliveira/lcnutricao/issues"
+  },
+  "homepage": "https://github.com/vitinhooliveira/lcnutricao#readme",
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
