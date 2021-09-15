@@ -1,9 +1,11 @@
+import Example from '../components/Example';
 function Home() {
-    return (
-      <div>
-        <h1>Bem vindo ao site da Laura Costa</h1>
-      </div>
-    );
-  }
-  
-  export default Home;
+  return (
+    <div>
+      <Example />
+      <h3>teste</h3>
+    </div>
+  );
+}
+
+export default Home;
