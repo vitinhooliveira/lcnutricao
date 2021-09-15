@@ -1,4 +1,5 @@
 import Example from '../components/Example';
+
 function Home() {
   return (
     <div>
