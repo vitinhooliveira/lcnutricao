@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
 import Heads from '../head/Heads';
 import Header from '../header/Header';
-import styled from 'styled-components';
-
-const Container = styled.div``;
+import { Footer } from '../footer/Footer';
 
 export default function Layout({ children }) {
   return (
-    <Container >
+    <Fragment>
       <Heads></Heads>
       <Header></Header>
-      {children}
-    </Container>
+      <div>{children}</div>
+      <Footer />
+    </Fragment>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import { makeStyles } from '@mui/styles';
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles({
   button: {
@@ -12,6 +12,9 @@ const useStyles = makeStyles({
     height: 52,
     width: 218,
     padding: '0 0 0 0',
+    position: 'relative',
+    left: '21%',
+    top: '72%',
   },
 });
 
@@ -20,11 +23,11 @@ const blue = {
   '--background-end': '#18A0FB',
 };
 
-export function SendWhats() {
+export function SendWhats({ openPage }) {
   const classes = useStyles();
 
   return (
-    <Button className={classes.button} style={blue}>
+    <Button className={classes.button} style={blue} onClick={openPage}>
       Me mande um whats
     </Button>
   );

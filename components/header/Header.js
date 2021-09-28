@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/material';
 import React from 'react';
 import { Contato } from '../button/Contato';
 import { Logo } from '../img/Logo';

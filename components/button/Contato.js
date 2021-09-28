@@ -1,5 +1,7 @@
-import React from 'react';
+import { Modal } from '@mui/material';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import Contact from '../contact/contact';
 
 const Button = styled.button`
   background: #f3f3f3;
@@ -13,12 +15,25 @@ const Button = styled.button`
   top: 17px;
   font-size: 18px;
   font-family: 'Franklin Gothic Medium';
+  cursor: pointer;
 `;
 
 export function Contato() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div style={{ position: 'absolute', right: '0' }}>
-      <Button>Contato</Button>
+      <Button onClick={handleOpen}>Contato</Button>
+      <Modal open={open} onClose={handleClose}>
+        <Contact />
+      </Modal>
     </div>
   );
 }
